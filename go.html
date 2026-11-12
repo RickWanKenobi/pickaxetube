@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PickaxeTube ➔ YouTube Comment</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const v = params.get('v');
+    const lc = params.get('lc');
+    if (v && lc) {
+      window.location.replace("https://www.youtube.com/watch?v=" + encodeURIComponent(v) + "&lc=" + encodeURIComponent(lc));
+    }
+  </script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 50px; color: #555;">
+  Redirecting to YouTube comment...
+</body>
+</html>
